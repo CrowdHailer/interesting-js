@@ -18,6 +18,10 @@ describe('Extending Binary functions', function(){
       expect(curryAdd(3)(4)).toEqual(7);
     });
 
-
+    it('should repeatedly return functions', function(){
+      expect(curryAdd()(3)(4)).toEqual(7);
+      expect(curryAdd(3)()(4)).toEqual(7);
+      expect(curryAdd()()()(3)()(4)).toEqual(7);
+    });
   });
 });
