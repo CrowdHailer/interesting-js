@@ -4,7 +4,9 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
     files: [
       'lib/binary_add.js',
-      'spec/binary_add_spec.js'
+      'lib/curriedaccumulator.js',
+      'spec/binary_add_spec.js',
+      'spec/curriedaccumulator_spec.js'
     ],
     exclude: [
     ],
