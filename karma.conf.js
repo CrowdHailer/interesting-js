@@ -6,9 +6,11 @@ module.exports = function(config) {
       'lib/binary_add.js',
       'lib/curriedaccumulator.js',
       'lib/point.js',
+      'lib/object_reduce.js',
       'spec/binary_add_spec.js',
       // 'spec/curriedaccumulator_spec.js'
-      'spec/point_spec.js'
+      'spec/point_spec.js',
+      'spec/object_reduce_spec.js'
     ],
     exclude: [
     ],
