@@ -7,7 +7,7 @@ describe('object combining', function(){
     expect(p3.y).toEqual(8);
   });
   it('should generalise with 0 arg', function(){
-    var sum = inflate(addOb);
+    var sum = inflate(addOb, {x:0, y:0});
     p3 = sum();
     expect(p3.x).toEqual(0);
     expect(p3.y).toEqual(0);
