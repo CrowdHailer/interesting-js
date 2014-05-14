@@ -5,5 +5,13 @@ describe('Point', function(){
       expect(pt.x).toEqual(2);
       expect(pt.y).toEqual(3);
     });
+
+    it('should be imutable', function(){
+      pt = Utilities.Point(2, 3);
+      pt.x = 5;
+      pt.y = 6;
+      expect(pt.x).toEqual(2);
+      expect(pt.y).toEqual(3);
+    });
   });
 });
