@@ -5,8 +5,10 @@ module.exports = function(config) {
     files: [
       'lib/binary_add.js',
       'lib/curriedaccumulator.js',
+      'lib/point.js',
       'spec/binary_add_spec.js',
       // 'spec/curriedaccumulator_spec.js'
+      'spec/point_spec.js'
     ],
     exclude: [
     ],
