@@ -30,6 +30,7 @@ describe('Extending Binary functions', function(){
     beforeEach(function(){
       sum = generalise(add);
     });
+
     it('should add no numbers to zero', function(){
       expect(sum()).toEqual(0);
     });
@@ -45,6 +46,13 @@ describe('Extending Binary functions', function(){
     it('should sum many numbers', function(){
       expect(sum(1, 2, 3, 4, 5)).toEqual(15);
       expect(sum(1, 2, 3, 4, 5, 6)).toEqual(21);
+    });
+
+    it('should work for all binary function', function(){
+      max = generalise(function(a, b){
+        return (a > b) ? a : b;
+      });
+      expect(max(2, 3, 4, 5, 6, 3, 2)).toEqual(6);
     });
   });
 });
