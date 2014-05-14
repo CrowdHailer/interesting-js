@@ -6,7 +6,7 @@ module.exports = function(config) {
       'lib/binary_add.js',
       'lib/curriedaccumulator.js',
       'spec/binary_add_spec.js',
-      'spec/curriedaccumulator_spec.js'
+      // 'spec/curriedaccumulator_spec.js'
     ],
     exclude: [
     ],
