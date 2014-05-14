@@ -24,4 +24,27 @@ describe('Extending Binary functions', function(){
       expect(curryAdd()()()(3)()(4)).toEqual(7);
     });
   });
+
+  describe('extend binary function', function(){
+    var sum;
+    beforeEach(function(){
+      sum = generalise(add);
+    });
+    it('should add no numbers to zero', function(){
+      expect(sum()).toEqual(0);
+    });
+
+    it('should add two numbers', function(){
+      expect(sum(1, 2)).toEqual(3);
+    });
+
+    it('should sum three numbers', function(){
+      expect(sum(1, 2, 3)).toEqual(6);
+    });
+
+    it('should sum many numbers', function(){
+      expect(sum(1, 2, 3, 4, 5)).toEqual(15);
+      expect(sum(1, 2, 3, 4, 5, 6)).toEqual(21);
+    });
+  });
 });
