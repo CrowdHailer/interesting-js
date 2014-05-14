@@ -12,4 +12,12 @@ describe('Extending Binary functions', function(){
       expect(add()).toEqual(0);
     });
   });
+
+  describe('curried add function', function(){
+    it('should add sequentially', function(){
+      expect(curryAdd(3)(4)).toEqual(7);
+    });
+
+
+  });
 });
